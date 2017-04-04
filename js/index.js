@@ -12,9 +12,9 @@ if (n <= 0) {
     document.write(n + ' член послідовності Фібоначчі = ' + sequenceFibonacci[1]);
 } else {
     for (var i = 3; i <= n; i++) {
-        var nFib = sequenceFibonacci.length - 1;
-        var Fib = nFib - 1;
-        var lastNumber = sequenceFibonacci[nFib] + sequenceFibonacci[Fib];
+        var lastNumber = sequenceFibonacci.length - 1;
+        var nFib = lastNumber - 1;
+        var lastNumber = sequenceFibonacci[nFib] + sequenceFibonacci[lastNumber];
         sequenceFibonacci.push(lastNumber);
     }
 }
